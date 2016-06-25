@@ -12,8 +12,9 @@ var courseSchema = new mongoose.Schema({
     courseId: {type:String, unique:true},
     courseName: {type:String},
     courseType:String,
-    courseDescription:String
+    courseDescription:String,
+
 });
 
-var Course= mongoose.model('course',courseSchema) ;
+var Course= mongoose.model('course',courseSchema);
 module.exports = Course;
